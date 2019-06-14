@@ -5,25 +5,22 @@
  */
 package controller;
 import com.opensymphony.xwork2.ActionSupport;
+import java.util.ArrayList;
+import java.util.List;
 import model.Event;
 /**
  *
  * @author duy
  */
 public class CreateEvent extends ActionSupport{
-    private Event event;
+   public static ArrayList<controller.Event> list = new ArrayList<>();
     
-    @Override
-    public String execute() {
-        setEvent(new Event()); // get data from model
-        return SUCCESS;
+    public void saveEvent(controller.Event event){
+        list.add(event);
     }
     
-    public Event getEvent() {
-        return event;
-    }
-  
-    public void setEvent(Event event) {
-        this.event = event;
+    public static List<controller.Event> getList(){
+        
+        return list;
     }
 }

@@ -8,9 +8,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><s:property value="event.event" /></title>
+        
     </head>
     <body>
-        <h1><s:property value="event.event" /></h1>
-    </body>
+    
+
+</body>
 </html>

@@ -7,25 +7,13 @@ package controller;
 
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionSupport;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author duy
  */
 public class Event extends ActionSupport{
-    private model.Event event;
     
-    @Override
-    public String execute() {
-        setEvent(new model.Event()); // get data from model
-        return SUCCESS;
-    }
-    
-    public model.Event getEvent() {
-        return event;
-    }
-  
-    public void setEvent(model.Event event) {
-        this.event = event;
-    }
 }
