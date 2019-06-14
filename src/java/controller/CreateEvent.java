@@ -13,13 +13,13 @@ import model.Event;
  * @author duy
  */
 public class CreateEvent extends ActionSupport{
-   public static ArrayList<controller.Event> list = new ArrayList<>();
+   public static ArrayList<Event> list = new ArrayList<>();
     
-    public void saveEvent(controller.Event event){
+    public void saveEvent(Event event){
         list.add(event);
     }
     
-    public static List<controller.Event> getList(){
+    public static List<Event> getList(){
         
         return list;
     }
